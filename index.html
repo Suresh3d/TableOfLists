@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <style>
+        table, th, td {
+            border : 1px solid black;
+            border-collapse:collapse;
+        }
+    </style>
+    <script src="jquery"></script>
+    <script>
+        $("document").ready(function(){
+        $("#search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#table tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+            });
+        });
+    </script>
+    </head>
+    <body>
+    <input type="text" id="search" onkeyup="myFunction()" placeholder="Search Items...">
+
+        <table id="table">
+        <tr>
+            <th>S.No</th>
+            <th>ODT Name</th>
+            <th>Tag</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>EditSketchPlane</td>
+            <td>Covering Optional Plane, Axis, Origin</td>
+            <td>Done</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>FirstDimScale</td>
+            <td>Temp Dim, Dim from Action bar, Minibar</td>
+            <td>Done</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>ServiceUpdateSketch</td>
+            <td>Create, Delete, Update Entities</td>
+            <td>Done</td>
+        </tr>
+        </table>
+    </body>
+</html>

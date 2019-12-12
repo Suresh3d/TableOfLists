@@ -1,0 +1,19 @@
+{
+  "name": "tableoflists",
+  "version": "1.0.0",
+  "description": "TableOfLists",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suresh3d/TableOfLists.git"
+  },
+  "author": "Suresh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suresh3d/TableOfLists/issues"
+  },
+  "homepage": "https://github.com/Suresh3d/TableOfLists#readme"
+}
